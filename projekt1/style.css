@@ -1,0 +1,142 @@
+/* zadanie domowe dodaj google font */
+/* domyslne ustawienia dla CSS */
+/*border box wrzuca rzeczy do srodka */
+*, *::before,*::after
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 15 px;
+}
+a 
+{
+    text-decoration: none;
+    color: darkgray;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;s
+}
+/* ************************************************************************************************************ */
+/* Container  */
+.container
+{
+max-width: 1000px;
+margin: 20px auto;
+border: 1px solid darkgray;
+border-radius: 5px;
+box-shadow: 0 0 35px darkgray;
+}
+
+
+
+
+/* header */
+/*jezeli cos się zmiesci w jednej linice to porządkuje obok siebie */
+/* justify content space between rozklada równo na stronie   */
+header
+{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+}
+
+/*Brand*/
+
+.brand a, .brand img
+{
+    display: block;
+
+}
+
+/*Menu*/
+
+nav ul > li 
+{
+    list-style-type: none;
+    
+}
+
+nav li
+{
+    display: inline-block;
+}
+/*góra prawa dół lewa dla paddingu */
+nav a
+{
+    color: black;
+    padding: 10x 15px;
+    font-size: 18px;
+    display: block;
+
+}
+
+nav a:hover
+{
+    background-color: black;
+    color: white;
+}
+
+/*slider*/
+
+.slider img
+{
+    display: block;
+}
+
+main
+ {
+display: flex;
+justify-content: space-between;
+}
+
+article
+{
+    width: 70%;
+    padding: 30px;
+}
+
+aside
+{
+    width: 30%;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-left: 1px solid black ;
+}
+
+.widget 
+{
+    margin-bottom: 40 px;
+
+}
+
+.widget ul
+{
+    list-style-type: square;
+    padding: 0 0 0 18px;
+    margin:0;
+}
+
+.widget li
+{
+ margin-bottom: 15px;
+}
+
+footer
+{
+    background: lightgray;
+    border-top: 1px solid darkgray;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+footer p
+{
+    margin: 0;
+}
